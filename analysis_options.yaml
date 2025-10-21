@@ -1,0 +1,32 @@
+include: package:lints/recommended.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+  errors:
+    missing_required_param: error
+    missing_return: error
+    todo: ignore
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+linter:
+  rules:
+    - always_declare_return_types
+    - always_require_non_null_named_parameters
+    - annotate_overrides
+    - avoid_empty_else
+    - avoid_print
+    - avoid_relative_lib_imports
+    - avoid_returning_null_for_future
+    - avoid_types_as_parameter_names
+    - camel_case_types
+    - curly_braces_in_flow_control_structures
+    - empty_catches
+    - prefer_const_constructors
+    - prefer_final_fields
+    - prefer_single_quotes
+    - sort_child_properties_last
+    - use_key_in_widget_constructors
